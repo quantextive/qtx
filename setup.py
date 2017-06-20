@@ -1,14 +1,14 @@
 from distutils.core import setup
 setup(
-  name = 'myqtx',
-  packages = ['myqtx'], # this must be the same as the name above
+  name = 'qtx',
+  packages = ['myqtx'],
   version = '0.1',
-  description = 'test lib',
-  author = 'Jide O',
-  author_email = 'jogunjobi@gmail.com',
-  url = 'https://github.com/jogunjobi/app5', # use the URL to the github repo
-  download_url = 'https://github.com/jogunjobi/app5/myqtx/archive/0.1.tar.gz', # I'll explain this in a second
-  keywords = ['testing', 'logging', 'example'], # arbitrary keywords
+  description = 'API client for Quantextive AEX Data Platform',
+  author = 'Quantextive',
+  author_email = 'api@quantextive.com',
+  url = 'https://github.com/quantextive/qtx', #github repo
+  download_url = 'https://github.com/quantextive/qtx/archive/0.1.tar.gz',
+  keywords = ['africa', 'finance', 'quantextive', 'fintech'],
   classifiers = [],
 )
 

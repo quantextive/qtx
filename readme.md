@@ -1,4 +1,4 @@
-## Quantextive API Client
+## Quantextive AEX API Client
 
 #### Dependencies
 
