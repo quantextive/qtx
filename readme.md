@@ -17,7 +17,7 @@
 
 #### How to make API request?
 
-class `ApiClient` in [`api_client.py`](api_client.py) is provisioned to make API requests. In the constructor of the `ApiClient` class a dictionary of default headers for all requests can be supplied. So that headers need not be supplied with each request.
+class `ApiClient` in [`qtx.py`](api_client.py) is provisioned to make API requests. In the constructor of the `ApiClient` class a dictionary of default headers for all requests can be supplied. So that headers need not be supplied with each request.
 
 ```python
 default_headers = { 'x-api-key' : '<token>' }
@@ -30,10 +30,10 @@ To make a GET request, `ApiClient.get()` method is used with following params
 - **`name`**: `string` api name which will be appended to base_url
 - **`params`**: `dict` of url params
  
-e.g.
+**EXAMPLE**
 
 ```python
-import api_client
+import qtx
 
 api = "market-data-eod"
 params = { 
