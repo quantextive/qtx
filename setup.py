@@ -8,7 +8,7 @@ setup(
   author_email = 'api@quantextive.com',
   url = 'https://github.com/quantextive/qtx', #github repo
   download_url = 'https://github.com/quantextive/qtx/archive/0.1.tar.gz',
-  keywords = ['africa', 'finance', 'quantextive', 'fintech'],
+  keywords = ['africa', 'finance', 'quantextive'],
   classifiers = [],
 )
 
