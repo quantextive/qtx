@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
   name = 'qtx',
-  packages = ['myqtx'],
+  packages = ['qtx'],
   version = '0.1',
   description = 'API client for Quantextive AEX Data Platform',
   author = 'Quantextive',
