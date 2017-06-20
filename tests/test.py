@@ -1,13 +1,13 @@
-import api_client
+from qtx import qtx
 
-client = api_client.ApiClient()
+client = qtx.ApiClient()
 
 api = "market-data"
 params = { 
     'securityId': 'NSE:7UP',
     'date': '20170320'
 }
-api_key = 'CCSnPZGQES4RkFmZAV4ll3IYEvhscycG1tnBjvh9'
+api_key = '<api_token>'
 print api
 print client.get(api_key, api, params).data_frame()
 
@@ -17,7 +17,7 @@ params = {
     'startDate': '2017-02-01',
     'endDate': '2017-03-20'
 }
-api_key = 'CCSnPZGQES4RkFmZAV4ll3IYEvhscycG1tnBjvh9'
+api_key = '<api_token>'
 print api
 print client.get(api_key, api, params).data_frame()
 
@@ -27,7 +27,7 @@ params = {
     'startDate': '2017-02-01',
     'endDate': '2017-03-20'
 }
-api_key = 'CCSnPZGQES4RkFmZAV4ll3IYEvhscycG1tnBjvh9'
+api_key = '<api_token>'
 print api
 print client.get(api_key, api, params).data_frame()
 
@@ -37,7 +37,7 @@ params = {
     'startDate': '2017-02-01',
     'endDate': '2017-03-20'
 }
-api_key = 'CCSnPZGQES4RkFmZAV4ll3IYEvhscycG1tnBjvh9'
+api_key = '<api_token>'
 print api
 print client.get(api_key, api, params).data_frame()
 
@@ -47,7 +47,7 @@ params = {
     'startDate': '2017-02-01',
     'endDate': '2017-03-20'
 }
-api_key = 'CCSnPZGQES4RkFmZAV4ll3IYEvhscycG1tnBjvh9'
+api_key = '<api_token>'
 print api
 print client.get(api_key, api, params).data_frame()
 
@@ -57,7 +57,7 @@ params = {
     'startDate': '2017-02-01',
     'endDate': '2017-03-20'
 }
-api_key = 'CCSnPZGQES4RkFmZAV4ll3IYEvhscycG1tnBjvh9'
+api_key = '<api_token>'
 print api
 print client.get(api_key, api, params).data_frame()
 
@@ -68,7 +68,7 @@ params = {
     'startDate': '2017-02-01',
     'endDate': '2017-03-20'
 }
-api_key = 'CCSnPZGQES4RkFmZAV4ll3IYEvhscycG1tnBjvh9'
+api_key = '<api_token>'
 print api
 print client.get(api_key, api, params).data_frame()
 
@@ -76,7 +76,7 @@ api = "currency"
 params = { 
     'country_name': 'Tunisia'
 }
-api_key = 'CCSnPZGQES4RkFmZAV4ll3IYEvhscycG1tnBjvh9'
+api_key = '<api_token>'
 print api
 print client.get(api_key, api, params).data_frame()
 
@@ -84,6 +84,6 @@ api = "company"
 params = { 
     'securityId': 'NSE:7UP'
 }
-api_key = 'CCSnPZGQES4RkFmZAV4ll3IYEvhscycG1tnBjvh9'
+api_key = '<api_token>'
 print api
 print client.get(api_key, api, params).data_frame()
