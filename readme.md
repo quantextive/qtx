@@ -15,9 +15,9 @@
  	  pip install pandas
  	  ```
 
-#### How to make API request?
+#### How to make an API request?
 
-class `ApiClient` in [`qtx.py`](api_client.py) is provisioned to make API requests. In the constructor of the `ApiClient` class a dictionary of default headers for all requests can be supplied. So that headers need not be supplied with each request.
+class `ApiClient` in [`qtx.py`](api_client.py) is provisioned to make API requests. In the constructor of the `ApiClient` class, a dictionary of default headers for all requests can be supplied so that headers need not be supplied with each request.
 
 ```python
 default_headers = { 'x-api-key' : '<token>' }
@@ -47,7 +47,7 @@ client = api_client.ApiClient()
 print client.get(api_key, api, params).data_frame()
 ```
 
-method `get()` returns a `Response` object from which below methods can be used to get response data as **json** of **Pandas DataFrame**. So
+The `get()` method returns a `Response` object from which below methods can be used to get response data as **json** or **Pandas DataFrame**.
 
  - `client.get(api_key, name, queryparams).json()` will return response data as **json**, and
  - `client.get(api_key, name, queryparams).data_frame()` will return response data as pandas **DataFrame**
