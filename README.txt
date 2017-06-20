@@ -33,7 +33,7 @@ To make a GET request, `ApiClient.get()` method is used with following params
 **EXAMPLE**
 
 ```python
-import qtx
+from qtx import qtx
 
 api = "market-data-eod"
 params = { 
@@ -41,9 +41,9 @@ params = {
     'startDate': '2017-02-08',
     'endDate': '2017-02-10'
 }
-api_key = '<token>'
+api_key = '<api_token>'
 
-client = api_client.ApiClient()
+client = qtx.ApiClient()
 print client.get(api_key, api, params).data_frame()
 ```
 
