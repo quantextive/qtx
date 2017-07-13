@@ -6,7 +6,7 @@
  	- install it using **pip** 
  	
  	  ```python
- 	  pip install request
+ 	  pip install requests
  	  ```
  - [**Pandas**](http://pandas.pydata.org/)
  	- install it using **pip** 
