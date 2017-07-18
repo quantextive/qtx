@@ -1,66 +1,58 @@
-from qtx import qtx
 
-client = qtx.ApiClient()
-
+### REAL TIME DATA (limited to Nigerian Stock Exchange only)
 api = "market-data"
 params = { 
     'securityId': 'NSE:7UP',
     'date': '20170320'
 }
-api_key = '<api_token>'
-print api
-print client.get(api_key, api, params).data_frame()
 
+
+### END-OF-DAY STOCK DATA
 api = "market-data-eod"
 params = { 
     'securityId': 'NSE:NNFM',
     'startDate': '2017-02-01',
     'endDate': '2017-03-20'
 }
-api_key = '<api_token>'
-print api
-print client.get(api_key, api, params).data_frame()
 
+
+### COMPANY FINANCIALS
 api = "company-financials"
 params = { 
     'securityId': 'NSE:NNFM',
     'startDate': '2017-02-01',
     'endDate': '2017-03-20'
 }
-api_key = '<api_token>'
-print api
-print client.get(api_key, api, params).data_frame()
 
+
+### COMPANY RETURNS
 api = "company-returns"
 params = { 
     'securityId': 'NSE:NNFM',
     'startDate': '2017-02-01',
     'endDate': '2017-03-20'
 }
-api_key = '<api_token>'
-print api
-print client.get(api_key, api, params).data_frame()
 
+
+### COMPANY MOVING AVERAGES
 api = "company-movaverage"
 params = { 
     'securityId': 'NSE:NNFM',
     'startDate': '2017-02-01',
     'endDate': '2017-03-20'
 }
-api_key = '<api_token>'
-print api
-print client.get(api_key, api, params).data_frame()
 
+
+### COMPANY TECHNICAL INDICATORS
 api = "company-technicals"
 params = { 
     'securityId': 'NSE:NNFM',
     'startDate': '2017-02-01',
     'endDate': '2017-03-20'
 }
-api_key = '<api_token>'
-print api
-print client.get(api_key, api, params).data_frame()
 
+
+### EXCHANGE RATES
 api = "currency-rate"
 params = { 
     'curr_code': 'TND',
@@ -68,22 +60,17 @@ params = {
     'startDate': '2017-02-01',
     'endDate': '2017-03-20'
 }
-api_key = '<api_token>'
-print api
-print client.get(api_key, api, params).data_frame()
 
+
+### LIST OF ALL CURRENCIES
 api = "currency"
 params = { 
     'country_name': 'Tunisia'
 }
-api_key = '<api_token>'
-print api
-print client.get(api_key, api, params).data_frame()
 
+
+### DETAILS OF ALL COMPANIES
 api = "company"
 params = { 
     'securityId': 'NSE:7UP'
 }
-api_key = '<api_token>'
-print api
-print client.get(api_key, api, params).data_frame()
